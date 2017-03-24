@@ -5,6 +5,7 @@
 
 #ifndef HW5_COLOR_H
 #define HW5_COLOR_H
+#include <sstream>
 
 class Color {
 public:
@@ -14,9 +15,15 @@ public:
      */
     Color(int theColor=0) : myColor(theColor) {}
     bool operator==(const Color &other) const { return myColor==other.myColor; }
-private:
+
+    // friends
+    /**
+     * Prints a human-readable version of the vertex onto the output stream
+     */
+    friend std::ostream & operator<<(std::ostream& stream, const Color& col);
+
+ private:
     Color(); // no default constructor
     int myColor;
 };
-
 #endif //HW5_COLOR_H
