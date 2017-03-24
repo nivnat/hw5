@@ -24,7 +24,7 @@ ColoredGraph generateGraph(const int magicNumber) {
     // some constants
     const double lnMagic = trunc(log(magicNumber));
     const int numVertices = rand(magicNumber - 5, magicNumber + 5);
-    const int numEdges = rand(magicNumber * lnMagic, magicNumber + 2 * lnMagic);
+    const int numEdges = rand(magicNumber * lnMagic, magicNumber * 2 * lnMagic);
 
     ColoredGraph result;
     // generate and add vertices
