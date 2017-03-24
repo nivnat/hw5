@@ -6,4 +6,4 @@
 #include "Vertex.h"
 
 // Initialize the static field
-int Vertex::vertexId=0;
+long Vertex::vertexId=0;

@@ -26,8 +26,8 @@ public:
      */
     friend std::ostream & operator<<(std::ostream& stream, const Vertex& vert);
 private:
-    static int vertexId;
-    int myVertexId;
+    static long vertexId;
+    long myVertexId;
     Color myVertexColor;
 };
 
