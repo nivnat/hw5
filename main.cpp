@@ -25,7 +25,6 @@ ColoredGraph generateGraph(const int magicNumber) {
     const int numVertices = rand(magicNumber - 5, magicNumber + 5);
     const double lnTerm = trunc(log(numVertices));
     const int numEdges = rand(numVertices * lnTerm, 2*numVertices * lnTerm);
-    cout << magicNumber << " " << lnTerm << ": " << numVertices << " " << numEdges << endl;
 
     ColoredGraph result;
     // generate and add vertices
@@ -37,7 +36,6 @@ ColoredGraph generateGraph(const int magicNumber) {
         try {
             Vertex Vert1 = result[rand(0, numVertices - 1)];
             Vertex Vert2 = result[rand(0, numVertices - 1)];
-            //cout << ii << ": " << Vert1 << " " << Vert2 << endl;
             result.addEdge(Edge(Vert1, Vert2));
         }
         catch (std::invalid_argument err) {
