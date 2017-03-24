@@ -15,6 +15,7 @@ public:
      */
     Color(int theColor=0) : myColor(theColor) {}
     bool operator==(const Color &other) const { return myColor==other.myColor; }
+    operator int() const { return myColor; }
 
     // friends
     /**

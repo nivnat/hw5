@@ -42,7 +42,7 @@ public:
     // getters and setters
     const Vertex& getV1() const { return aa; }
     const Vertex& getV2() const { return bb; }
-    const Color& getColor() const { return edgeColor; }
+    const Color getColor() const { return edgeColor; }
     void setColor(Color theColor) { edgeColor=theColor; }
 
 private:

@@ -18,7 +18,7 @@ public:
     bool operator==(const Vertex &other) const { return myVertexId == other.myVertexId; }
 
     // getters/setters
-    Color getColor() const { return myVertexColor; }
+    const Color getColor() const { return myVertexColor; }
     void setColor(Color theColor) { myVertexColor=theColor; }
 
     /**
