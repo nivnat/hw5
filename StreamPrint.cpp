@@ -20,7 +20,7 @@ std::ostream & operator<<(std::ostream& stream, const ColoredGraph& theGraph) {
 }
 
 std::ostream & operator<<(std::ostream& stream, const Edge& theEdge) {
-    stream << theEdge.aa << " <-> " << theEdge.bb << ", edge color: " << theEdge.getColor();
+    stream << *theEdge.aa << " <-> " << *theEdge.bb << ", edge color: " << theEdge.getColor();
     return stream;
 }
 

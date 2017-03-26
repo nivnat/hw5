@@ -46,9 +46,9 @@ ColoredGraph generateGraph(const int magicNumber) {
     // generate and add edges
     for (int ii = 0; ii < numEdges; ii++)
         try {
-            Vertex Vert1 = result[rr.nextInRange(0, numVertices - 1)];
-            Vertex Vert2 = result[rr.nextInRange(0, numVertices - 1)];
-            result.addEdge(Edge(Vert1, Vert2));
+            Vertex& Vert1 = result[rr.nextInRange(0, numVertices - 1)];
+            Vertex& Vert2 = result[rr.nextInRange(0, numVertices - 1)];
+            result.addEdge(Edge(&Vert1, &Vert2));
         }
         catch (std::invalid_argument err) {
             ii--;
